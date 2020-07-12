@@ -1,0 +1,16 @@
+Walker Week 15 R Challenge
+
+MPG Regression
+1. Based on a p-value of 0.05, the variables which contributed a non-random abount of variance to the mpg values were vehicle length and ground clearance, as well as the intercept. Vehicle weight would also be considered significant if we had used a p-value cut off of 0.1 instead.
+2. The slope of the linear model is not considered to be zero because the coefficients of the variables are not zero, although they are very low for some variables.
+3. This linear model is relatively effective with a R-squared value of 0.7032 and a significant p-value; however, the model is not perfect and the high value of the y-intercept means there are other variables which significantly contribute that are not in the model.
+
+Suspension Coil Summary
+There are 150 data points in the dataset of suspension coils. The mean PSI of the the coils is 1498.78 and the median is 1500. The mean and medium being very close indicates that the data is not likely to be heavily skewed. The variance in this dataset is 62.3 while the standard deviation is 7.9.
+The variance in this dataset is 62.3 and so it is less than then requirements of the design specfications. Thus, this lot meets criteria and would pass inspection.
+
+Suspension Coil T-Test
+I performed a one-sample T-test on the PSI variable for this lot of suspension coils compared to a population mean of 1500 to determine if this sample was statistically different than the population. The result of the t-test indicate that, based on a p<0.05 threshold for significance, this sample is not significantly different than the population as the p-value is 0.06 (greater than 0.05). 
+
+Design of new study
+In this study we will test how the MechaCar compares to the top performing comparable vehicle on the market. Our research indicates that car performance is a key metric that is important to our desired customer base. Therefore, we will design a test to compare net car performance. To do this, we will test the MechaCar and the top performing comparable car from it's class on a closed circuit race course. The null hypothesis would be that there is no performance difference between the competitor car and the MechaCar. The alternative hypothesis would be that the MechaCar has a better performance than the competitor. We will collect lap times for each car and repeat the measurements numerous times to ensure a fair representation in each sample. We will use the same driver for both cars to keep this controled for the experiment. We will then run a 2 sample t-test on the lap times from the MechaCar and the top performing competitor. This test will tell us is the MechaCar's performance is significantly different from the competitor. 
